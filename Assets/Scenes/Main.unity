@@ -683,6 +683,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 6719151645428776987, guid: c5120e81b4742544d938ab842ab42d1f, type: 3}
+      propertyPath: velocidadLineal
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 6719151645428776987, guid: c5120e81b4742544d938ab842ab42d1f, type: 3}
+      propertyPath: velocidadRotacion
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 6719151645769022851, guid: c5120e81b4742544d938ab842ab42d1f, type: 3}
       propertyPath: m_RootOrder
       value: 1
