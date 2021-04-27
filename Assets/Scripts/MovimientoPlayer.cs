@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class MovimientoPlayer : MonoBehaviour
 {
-    public float velocidadLineal = 1.0f;
+    public float velocidadLineal = 2.0f;
     public float velocidadRotacion = 1.0f;
 
     void Start()
