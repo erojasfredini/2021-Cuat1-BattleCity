@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class MovimientoPlayer : MonoBehaviour
 {
+    /// <summary>
+    /// La velocidad lineal
+    /// </summary>
     public float velocidadLineal = 2.0f;
     public float velocidadRotacion = 1.0f;
 
