@@ -7,7 +7,7 @@ public class MovimientoPlayer : MonoBehaviour
     /// <summary>
     /// La velocidad lineal
     /// </summary>
-    public float velocidadLineal = 3.0f;
+    public float velocidadLineal = 1.5f;
     public float velocidadRotacion = 1.0f;
 
     void Start()
