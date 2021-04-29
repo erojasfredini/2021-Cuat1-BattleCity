@@ -13,14 +13,4 @@ public class Bala : MonoBehaviour
 
         GameObject.Destroy(gameObject);
     }
-
-    void Start()
-    {
-        
-    }
-
-    void Update()
-    {
-        
-    }
 }
