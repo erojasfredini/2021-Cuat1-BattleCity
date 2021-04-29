@@ -4,8 +4,38 @@ using UnityEngine;
 
 public class Block : MonoBehaviour
 {
-    public bool esDestruible = false;
+    public enum TipoBloque
+    {
+        Destruible,
+        Indestructible,
+        Atravesable
+    }
+    public TipoBloque tipoBloque = TipoBloque.Destruible;
     public uint vidasInicial = 4;
+
+    public bool esAtravesable
+    {
+        get
+        {
+            return tipoBloque == TipoBloque.Atravesable;
+        }
+    }
+
+    public bool esDestruible
+    {
+        get
+        {
+            return tipoBloque == TipoBloque.Destruible;
+        }
+    }
+
+    public bool esIndestructible
+    {
+        get
+        {
+            return tipoBloque == TipoBloque.Indestructible;
+        }
+    }
 
     private uint _vida;
     public uint vida
@@ -27,6 +57,14 @@ public class Block : MonoBehaviour
     void Start()
     {
         _vida = vidasInicial;
+
+        if (esAtravesable)
+        {
+            foreach (Collider c in transform.GetComponentsInChildren<Collider>())
+            {
+                c.enabled = false;
+            }
+        }
     }
 
     void Update()

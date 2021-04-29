@@ -698,4 +698,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   esDestruible: 1
+  esAtravesable: 0
   vidasInicial: 4
