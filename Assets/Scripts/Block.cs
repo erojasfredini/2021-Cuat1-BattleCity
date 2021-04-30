@@ -11,6 +11,7 @@ public class Block : MonoBehaviour
         Atravesable
     }
     public TipoBloque tipoBloque = TipoBloque.Destruible;
+    [Range(1,6)]
     public uint vidasInicial = 4;
 
     public bool esAtravesable

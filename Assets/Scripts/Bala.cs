@@ -12,5 +12,6 @@ public class Bala : MonoBehaviour
         }
 
         GameObject.Destroy(gameObject);
+        //gameObject.SetActive(false);
     }
 }

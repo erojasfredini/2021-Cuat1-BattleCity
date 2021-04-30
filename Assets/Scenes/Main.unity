@@ -164,6 +164,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 54005477, guid: 4013687ab273a874186374b25716a377, type: 3}
+      propertyPath: vidasInicial
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 730235390617469068, guid: 4013687ab273a874186374b25716a377, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -225,6 +229,7 @@ GameObject:
   - component: {fileID: 76035851}
   - component: {fileID: 76035850}
   - component: {fileID: 76035849}
+  - component: {fileID: 76035852}
   m_Layer: 0
   m_Name: Camera
   m_TagString: Untagged
@@ -297,6 +302,21 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+--- !u!114 &76035852
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 76035848}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 691543bed39c2974fbb0ff68fe45508b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  distancia: 14
+  objetivo: {fileID: 994515459}
+  velocidad: 5
 --- !u!1 &302287986
 GameObject:
   m_ObjectHideFlags: 0
@@ -392,6 +412,11 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &994515459 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6719151645769022851, guid: c5120e81b4742544d938ab842ab42d1f, type: 3}
+  m_PrefabInstance: {fileID: 6719151644975213973}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1241146824 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4360945788004554963, guid: ed44f08610715d0459a88790d5b5c244, type: 3}
@@ -762,11 +787,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5880494163101981786, guid: eb7c825b5cd65c84baaaa18047605a00, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 2.62
+      value: 0.84
       objectReference: {fileID: 0}
     - target: {fileID: 5880494163101981786, guid: eb7c825b5cd65c84baaaa18047605a00, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.25
+      value: 1.07
       objectReference: {fileID: 0}
     - target: {fileID: 5880494163101981786, guid: eb7c825b5cd65c84baaaa18047605a00, type: 3}
       propertyPath: m_LocalPosition.z
@@ -869,6 +894,10 @@ PrefabInstance:
     - target: {fileID: 560221396, guid: c5120e81b4742544d938ab842ab42d1f, type: 3}
       propertyPath: m_Layer
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 817237496, guid: c5120e81b4742544d938ab842ab42d1f, type: 3}
+      propertyPath: cooldownDisparo
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6719151645428776990, guid: c5120e81b4742544d938ab842ab42d1f, type: 3}
       propertyPath: m_Mass
