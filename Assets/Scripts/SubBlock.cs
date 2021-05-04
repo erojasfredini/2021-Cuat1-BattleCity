@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Assertions;
 
 public class SubBlock : MonoBehaviour
 {
@@ -22,5 +23,6 @@ public class SubBlock : MonoBehaviour
     void Start()
     {
         padre = transform.parent.GetComponent<Block>();
+        Assert.IsNotNull(padre, "El padre no tiene block!");
     }
 }
