@@ -4,6 +4,10 @@ using UnityEngine;
 
 public class MovimientoPlayer : MonoBehaviour
 {
+    public AudioClip sonidoMovimiento;
+    public AudioClip sonidoQuieto;
+    private AudioSource audioSource;
+
     /// <summary>
     /// La velocidad lineal
     /// </summary>
@@ -13,6 +17,7 @@ public class MovimientoPlayer : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody>();
+        audioSource = GetComponent<AudioSource>();
     }
 
     private Rigidbody rb;
@@ -22,6 +27,28 @@ public class MovimientoPlayer : MonoBehaviour
     {
         h = Input.GetAxis("Horizontal");
         v = Input.GetAxis("Vertical");
+
+        if (audioSource != null)
+        {
+            if (rb.velocity.sqrMagnitude > 0.1f)
+            {
+                // Poner sonido de movimiento
+                if ((audioSource.clip != sonidoMovimiento) || !audioSource.isPlaying)
+                {
+                    audioSource.clip = sonidoMovimiento;
+                    audioSource.Play();
+                }
+            }
+            else
+            {
+                if ((audioSource.clip != sonidoQuieto) || !audioSource.isPlaying)
+                {
+                    // Poner sonido de estar quieto
+                    audioSource.clip = sonidoQuieto;
+                    audioSource.Play();
+                }
+            }
+        }
     }
 
     void FixedUpdate()
