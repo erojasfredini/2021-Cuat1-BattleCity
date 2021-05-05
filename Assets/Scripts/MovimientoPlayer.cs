@@ -18,11 +18,15 @@ public class MovimientoPlayer : MonoBehaviour
     {
         rb = GetComponent<Rigidbody>();
         audioSource = GetComponent<AudioSource>();
+        velocidadMinMax = new Vector2(0.0f, velocidadLineal);
     }
 
     private Rigidbody rb;
     private float h;
     private float v;
+
+    public Vector2 pitchMinMax = new Vector2(1.0f, 1.4f);
+    private Vector2 velocidadMinMax;
     void Update()
     {
         h = Input.GetAxis("Horizontal");
@@ -38,6 +42,9 @@ public class MovimientoPlayer : MonoBehaviour
                     audioSource.clip = sonidoMovimiento;
                     audioSource.Play();
                 }
+
+                float pitchCoef = Mathf.InverseLerp(velocidadMinMax.x, velocidadMinMax.y, rb.velocity.magnitude);
+                audioSource.pitch = Mathf.Lerp(pitchMinMax.x, pitchMinMax.y, pitchCoef);
             }
             else
             {
