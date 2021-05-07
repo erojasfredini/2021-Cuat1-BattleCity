@@ -5,6 +5,7 @@ using UnityEngine;
 public class Bala : MonoBehaviour
 {
     public AudioClip sonidoExplosion;
+    public ParticleSystem prefabExplosion;
 
     private void OnTriggerEnter(Collider other)
     {
@@ -16,6 +17,8 @@ public class Bala : MonoBehaviour
         var managerFx = GameObject.Find("ManagerFxSonido");
         var manager = managerFx.GetComponent<FxSonidoManager>();
         manager.PlaySonido(sonidoExplosion, transform.position);
+
+        var explosion = GameObject.Instantiate(prefabExplosion, transform.position, Quaternion.identity);
 
         GameObject.Destroy(gameObject);
         //gameObject.SetActive(false);

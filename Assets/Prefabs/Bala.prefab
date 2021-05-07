@@ -127,6 +127,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sonidoExplosion: {fileID: 8300000, guid: 3a77defcde1caaa40b6f7502547e0c4e, type: 3}
+  prefabExplosion: {fileID: 5397672404288367213, guid: f9245ba40165197428a99e448bc43133, type: 3}
 --- !u!82 &4972421546230054027
 AudioSource:
   m_ObjectHideFlags: 0
