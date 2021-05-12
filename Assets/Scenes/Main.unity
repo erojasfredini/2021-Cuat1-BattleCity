@@ -329,7 +329,7 @@ GameObject:
   - component: {fileID: 302287989}
   - component: {fileID: 302287988}
   - component: {fileID: 302287987}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Plane
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1005,6 +1005,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 817237496, guid: c5120e81b4742544d938ab842ab42d1f, type: 3}
+      propertyPath: velocidadRotacion
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 6719151645769022851, guid: c5120e81b4742544d938ab842ab42d1f, type: 3}
       propertyPath: m_RootOrder
       value: 2
