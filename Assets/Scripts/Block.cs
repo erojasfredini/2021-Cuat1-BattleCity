@@ -47,6 +47,9 @@ public class Block : MonoBehaviour
         }
         set
         {
+            if (esIndestructible)
+                return;
+
             _vida = value;
             if (_vida == 0)
             {

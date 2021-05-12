@@ -7,18 +7,26 @@ public class SubBlock : MonoBehaviour
 {
     private Block padre;
 
-    private void OnTriggerEnter(Collider other)
+    public void OnDanio()
     {
-        if (padre.esDestruible && other.CompareTag("Bala"))
-        {
-            if (padre.vida > 0)
-            {
-                padre.vida -= 1;
-            }
+        if (padre.esIndestructible)
+            return;
 
-            GameObject.Destroy(gameObject);
+        if (padre.vida > 0)
+        {
+            padre.vida -= 1;
         }
+
+        GameObject.Destroy(gameObject);
     }
+
+    //private void OnTriggerEnter(Collider other)
+    //{
+    //    if (padre.esDestruible && other.CompareTag("Bala"))
+    //    {
+    //        OnDanio();
+    //    }
+    //}
 
     void Start()
     {

@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 560221397}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: OrigenBala
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -41,7 +41,7 @@ GameObject:
   - component: {fileID: 6719151645769022849}
   - component: {fileID: 6719151645772447187}
   - component: {fileID: 6719151645771317011}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: TankChassis
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -128,7 +128,7 @@ GameObject:
   - component: {fileID: 817237495}
   - component: {fileID: 817237496}
   - component: {fileID: 1248590697}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: TankPlayer
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -195,6 +195,7 @@ MonoBehaviour:
   sonidoQuieto: {fileID: 8300000, guid: 4932ab25b84dd7649b80af68a9660ddc, type: 3}
   velocidadLineal: 6
   velocidadRotacion: 4
+  pitchMinMax: {x: 1, y: 1.4}
 --- !u!135 &817237495
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -333,7 +334,7 @@ GameObject:
   - component: {fileID: 6719151645769022853}
   - component: {fileID: 6719151645772447195}
   - component: {fileID: 6719151645771317019}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: TankTracksRight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -415,7 +416,7 @@ GameObject:
   - component: {fileID: 6719151645769022855}
   - component: {fileID: 6719151645772447189}
   - component: {fileID: 6719151645771317013}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: TankTracksLeft
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -497,7 +498,7 @@ GameObject:
   - component: {fileID: 6719151645769022859}
   - component: {fileID: 6719151645772447185}
   - component: {fileID: 6719151645771317009}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: TankTurret
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -578,7 +579,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6719151645769022863}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: TankRenderers
   m_TagString: Untagged
   m_Icon: {fileID: 0}
