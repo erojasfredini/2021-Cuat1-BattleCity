@@ -16,8 +16,8 @@ public class BarraVidas : MonoBehaviour
         slider = GetComponent<Slider>();
         slider.maxValue = 100.0f;
         slider.minValue = 0.0f;
-        Debug.Log($"Vidas max {slider.maxValue}");
-        Debug.Log($"Vidas min {slider.minValue}");
+        //Debug.Log($"Vidas max {slider.maxValue}");
+        //Debug.Log($"Vidas min {slider.minValue}");
     }
 
     void Update()
@@ -26,6 +26,6 @@ public class BarraVidas : MonoBehaviour
             return;
 
         slider.value = vidasPlayer.vidas;
-        Debug.Log($"Vidas {vidasPlayer.vidas}");
+        //Debug.Log($"Vidas {vidasPlayer.vidas}");
     }
 }

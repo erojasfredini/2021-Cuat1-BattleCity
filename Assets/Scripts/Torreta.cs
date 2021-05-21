@@ -46,9 +46,12 @@ public class Torreta : MonoBehaviour
             Vector3 dir = (hit.point - torreta.position);
             dir.y = 0.0f;
             dir.Normalize();
-            Debug.Log($"Direccion {dir}");
+            //Debug.Log($"Direccion {dir}");
             rotacionObjetivo = Quaternion.LookRotation(dir, Vector3.up);
         }
+
+        //float pot = Input.GetAxis("Mouse ScrollWheel");
+        //Debug.Log($"Potencia {pot}");
 
         t = Input.GetAxis("Turret");
         f = Input.GetButtonDown("Fire1");
